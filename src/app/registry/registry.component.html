@@ -1,0 +1,60 @@
+<!-- Toolbar -->
+<mat-toolbar class="app-header">
+  <span>Venti</span>
+  <span class="example-spacer"></span>
+  <span class="nav-tool-items">
+    <a mat-button routerLink="/login" routerLinkActive="active"> <mat-icon class="icon-separate">account_circle</mat-icon>Sign In</a>
+    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active"><mat-icon class="icon-separate">assignment</mat-icon>Sign Up</a>
+  </span>
+</mat-toolbar>
+
+<!-- Login --->
+<div class="container-card">
+  <mat-card  class="example-card">
+    <mat-card-header class="card-header">
+      <mat-card-title class="word-tittle">Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Name"  name="name" [formControl]="name" required>
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Phone"  name="phone" [formControl]="phone" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Document" type="text" name="document" [formControl]="document" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Email" type="email" name="email" [formControl]="email" required>
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" type="password" name="password" [formControl]="password" required>
+              </mat-form-field>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button  (click)="registryUser($event)">Sign up</button>
+    </mat-card-actions>
+    <span>{{respuesta}}</span>
+  </mat-card>
+</div>
+

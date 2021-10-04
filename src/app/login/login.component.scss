@@ -1,0 +1,19 @@
+.example-card
+{
+  width: 30%;
+  padding: 100px;
+  background-color: black;
+  text-align: center;
+}
+.word-tittle{
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container-card{
+  display: flex;
+  justify-content: center;
+  margin-top:40px;
+}
+

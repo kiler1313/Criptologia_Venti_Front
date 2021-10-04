@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../assets/fonts/TitilliumWeb-Light.ttf") format("opentype");
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+*
+{
+  box-sizing: border-box;
+}
+h1,h2,h3,span,a,button,mat-card-title,mat-card-content {
+  font-family: "TitilliumWeb";
+}
+.icon-separate{
+  margin: 0.4rem;
+}
+.app-header{
+  background-color: black;
+}
+
+.example-card{
+  border-radius: 100px;
+}
